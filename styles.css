@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  box-sizing: border-box;
+  border: 1px solid red;
 }
 :root {
   --black: #000000;
@@ -13,6 +14,7 @@
   height: 80px;
   width: 100;
   padding: 0px 50px;
+  border: 2px solid greenyellow;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,6 +50,8 @@ main {
 
 #hero {
   max-width: 1200px;
+  margin-top: 60px;
+  padding: 50px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,4 +133,44 @@ main {
   width: 70%;
   color: slategrey;
   padding: 20px;
+}
+#about {
+  padding: 70px 0;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left #000000, #0f9b0f);
+  gap: 20px;
+}
+#info h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.about-cards-container {
+  background-color: red;
+  display: flex;
+
+  gap: 20px;
+}
+.about-card {
+  background: gray;
+  width: 300px;
+  height: 290px;
+  padding: 40px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.about-card img {
+  width: 50px;
+}
+.about-card p {
+  text-align: center;
+  font-size: 14px;
+  color: black;
 }
