@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   border: 1px solid red;
+  font-family: "Averia Libre", cursive;
 }
 :root {
   --black: #000000;
@@ -12,12 +13,13 @@
 .header {
   background-color: white;
   height: 80px;
-  width: 100;
+  width: 100%;
   padding: 0px 50px;
   border: 2px solid greenyellow;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
 }
 .header img {
   height: 80px;
@@ -39,13 +41,12 @@
 }
 
 main {
-  background: linear-gradient(to right, #000000, #0f9b0f);
+  background: linear-gradient(to bottom, #000000, #0f9b0f);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 600px;
 }
 
 #hero {
@@ -59,9 +60,8 @@ main {
 .hero-imagen {
   width: 400px;
   display: flex;
-  border-radius: 30px;
-  padding: 20px;
-  flex-direction: column;
+  border-radius: 100px;
+  padding: 22px 0px;
 }
 .hero-info {
   display: flex;
@@ -118,12 +118,13 @@ main {
   text-decoration: none;
 }
 .mas-info {
+  max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   text-align: center;
-  background: linear-gradient(to bottom, #000000, #0f9b0f);
+  /* background: linear-gradient(to bottom, #000000, #0f9b0f); */
 }
 .mas-info p {
   font-family: "Averia Libre", cursive;
@@ -134,31 +135,55 @@ main {
   color: slategrey;
   padding: 20px;
 }
+
 #about {
-  padding: 70px 0;
-  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 0;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to left #000000, #0f9b0f);
+  /* background: linear-gradient(to top, #000000, #0f9b0f); */
   gap: 20px;
 }
-#info h2 {
-  font-size: 2rem;
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.about-title h2 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(115, 255, 0);
+  text-shadow: #000000 5px 5px 2px;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
   font-weight: 800;
 }
-.about-cards-container {
-  background-color: red;
+.about-title p {
+  color: slategrey;
   display: flex;
-
+  text-align: center;
+  width: 70%;
+  font-size: 20px;
+  padding: 10px;
+}
+.about-cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
   gap: 20px;
 }
+
 .about-card {
-  background: gray;
-  width: 300px;
-  height: 290px;
-  padding: 40px 30px;
+  border: 1px solid greenyellow;
+  box-shadow: #000000 5px 5px 10px;
+  background: black;
+  width: 380px;
+  height: 450px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -166,11 +191,29 @@ main {
   justify-content: center;
   gap: 20px;
 }
+.about-card h3 {
+  font-family: "Dancing Script", cursive;
+  color: greenyellow;
+  width: 20px 20px;
+  font-size: 30px;
+  padding: 20px 0;
+}
 .about-card img {
   width: 50px;
 }
 .about-card p {
   text-align: center;
-  font-size: 14px;
-  color: black;
+  padding: 2px 0;
+  font-size: 16px;
+  color: slategrey;
+}
+
+.about-cards-container2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.about-cards-container2 h3 {
+  text-align: center;
+  width: 20px 20px;
 }
