@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-family: "Averia Libre", cursive;
 }
 :root {
@@ -33,6 +33,7 @@
 }
 
 .navbar-link {
+  text-shadow: #000000 0px 5px 5px;
   text-decoration: none;
   color: green;
   font-weight: 900;
@@ -72,8 +73,8 @@ main {
 }
 .hero-info h1 {
   font-family: "Dancing Script", cursive;
-  color: rgb(115, 255, 0);
-  text-shadow: #000000 20px 9px 2px;
+  color: rgb(208, 255, 0);
+  text-shadow: rgba(0, 153, 0, 0.692) 0px 5px 1px;
   padding: 1px;
   font-size: 60px;
   font-weight: 700;
@@ -83,8 +84,8 @@ main {
 }
 .hero-info h2 {
   font-family: "Dancing Script", cursive;
-  color: rgb(115, 255, 0);
-  text-shadow: #000000 20px 9px 2px;
+  color: rgb(208, 255, 0);
+  text-shadow: rgba(0, 153, 0, 0.692) 0px 5px 1px;
   padding: 1px;
   font-size: 40px;
   font-weight: 400;
@@ -110,7 +111,7 @@ main {
 .hero-bottom a {
   border: 1px solid rgb(115, 225, 0);
   font-family: "Dancing Script", cursive;
-  color: rgb(115, 255, 0);
+  color: rgb(208, 255, 0);
   background: var(--black);
   padding: 10px;
   border-radius: 16px;
@@ -156,7 +157,7 @@ main {
 }
 .about-title h2 {
   font-family: "Dancing Script", cursive;
-  color: rgb(115, 255, 0);
+  color: rgb(208, 255, 0);
   text-shadow: #000000 5px 5px 2px;
   display: flex;
   justify-content: center;
@@ -193,13 +194,16 @@ main {
 }
 .about-card h3 {
   font-family: "Dancing Script", cursive;
-  color: greenyellow;
+  color: rgb(208, 255, 0);
+  text-shadow: #ffffff 5px 5px 10px;
+
   width: 20px 20px;
   font-size: 30px;
   padding: 20px 0;
 }
 .about-card img {
-  width: 50px;
+  width: 100px;
+  border-radius: 10px;
 }
 .about-card p {
   text-align: center;

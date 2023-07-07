@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <img src="./—Pngtree—logo_3718351.png" alt="logo" />
+      <img src="./img/—Pngtree—logo_3718351.png" alt="logo" />
 
       <nav class="navbar">
         <ul>
@@ -40,7 +40,7 @@
         <div>
           <img
             class="hero-imagen"
-            src="Tolva-Ascanelli-Evo-43-2 - copia.jpg"
+            src="./img/Tolva-Ascanelli-Evo-43-2 - copia.jpg "
             alt="logo"
           />
         </div>
@@ -66,7 +66,7 @@
         </div>
         <div class="about-cards-container">
           <div class="about-card">
-            <img src="" alt="iconos" />
+            <img src="./img/OIG.bfxfCSTk.jpeg" alt="iconos" />
             <h3>Amplia gama de productos</h3>
             <p>
               Sapinagro ofrece una amplia selección de maquinaria y equipos
@@ -77,7 +77,7 @@
             </p>
           </div>
           <div class="about-card">
-            <img src="" alt="iconos" />
+            <img src="./img/calidad y confiabilidad.jpeg" alt="iconos" />
             <h3>Calidad y Confiabilidad</h3>
             <p>
               Priorizamos la calidad y confiabilidad de nuestros productos.
@@ -88,7 +88,7 @@
             </p>
           </div>
           <div class="about-card">
-            <img src="" alt="iconos" />
+            <img src="./img/experien y conocimiento.jpeg" alt="iconos" />
             <h3>Experiencia y conocimiento</h3>
             <p>
               Nuestro equipo está formado por expertos agrícolas que poseen un
@@ -101,7 +101,7 @@
         </div>
         <div class="about-cards-container2">
           <div class="about-card">
-            <img src="" alt="iconos" />
+            <img src="./img/sustantibilidad y conocimiento.jpeg" alt="iconos" />
             <h3>Sustentabilidad e Innovación</h3>
             <p>
               Nos dedicamos a promover prácticas agrícolas sustentables.
@@ -113,7 +113,7 @@
             </p>
           </div>
           <div class="about-card">
-            <img src="" alt="iconos" />
+            <img src="./img/Exp y conocimiento.jpeg" alt="iconos" />
             <h3>Soporte Post-Venta</h3>
             <p>
               Nuestro compromiso con nuestros clientes va más allá del punto de
@@ -123,6 +123,38 @@
               puedan confiar en nosotros para el éxito a largo plazo de sus
               operaciones agrícolas.
             </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-container">
+          <h2>Contactanos</h2>
+
+          <div class="info-contact">
+            <h3>Aquí sus consultas</h3>
+            <!-- <form action="" method="mail">
+              <label for="nombre"></label>
+              <input type="name" id="nombre" placeholder="Tu nombre" required />
+              <input type="name" placeholder="Tu apellido" required />
+              <input type="text" placeholder="Tu consulta..." required />
+              <input type="submit" value="Enviar" />
+            </form> -->
+
+            <form action="enviar_correo.php" method="POST">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" name="apellido" required />
+              <label for="mensaje">Mensaje:</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                cols="50"
+                required
+              ></textarea>
+              <input type="submit" value="Enviar" />
+            </form>
           </div>
         </div>
       </section>
