@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entregas-Nucba</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
       <img src="./img/—Pngtree—logo_3718351.png" alt="logo" />
-
       <nav class="navbar">
-        <ul>
-          <li><a class="navbar-link" href="#hero">Home</a></li>
-          <li><a class="navbar-link" href="#about">Anuncios</a></li>
-          <li><a class="navbar-link" href="#contact">Contactos</a></li>
-          <li><a class="navbar-link" href="#">Ultimos publicados</a></li>
+        <label for="menu-toggle" class="menu-label">
+          <img
+            src="./img/hamburger-menu-icon-png-white-15.jpg"
+            alt="menu-icon"
+          />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+
+        <ul class="navbar-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">Anuncios</a></li>
+          <li><a href="#contact">Contactos</a></li>
+          <li><a href="#">Ultimos publicados</a></li>
         </ul>
       </nav>
     </header>
@@ -126,38 +134,65 @@
           </div>
         </div>
       </section>
+
       <section id="contact">
         <div class="contact-container">
           <h2>Contactanos</h2>
+          <div class="list-contact">
+            <ul>
+              <li><h3>Oficina</h3></li>
+              <li><b>Ferre, Provincia de Buenos Aires</b></li>
+              <li>🚩 Av. Don Bosco, Ferre, Provincia de Buenos Aires</li>
+              <li>✉ sapinagro@hotmail.com</li>
+              <li>📱 2364 64 1517</li>
+            </ul>
 
-          <div class="info-contact">
-            <h3>Aquí sus consultas</h3>
-            <!-- <form action="" method="mail">
-              <label for="nombre"></label>
-              <input type="name" id="nombre" placeholder="Tu nombre" required />
-              <input type="name" placeholder="Tu apellido" required />
-              <input type="text" placeholder="Tu consulta..." required />
-              <input type="submit" value="Enviar" />
-            </form> -->
-
-            <form action="enviar_correo.php" method="POST">
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" name="nombre" required />
-              <label for="apellido">Apellido:</label>
-              <input type="text" id="apellido" name="apellido" required />
-              <label for="mensaje">Mensaje:</label>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="4"
-                cols="50"
-                required
-              ></textarea>
-              <input type="submit" value="Enviar" />
-            </form>
+            <ul>
+              <li><h3>Negocio</h3></li>
+              <li><b>La Trinidad, Provincia de Buenos Aires</b></li>
+              <li>
+                🚩 C. 15 /Ruta 50/ 34°06'09.1"S 61°08'21.4"W/ La Trinidad,
+                Provincia de Buenos Aires
+              </li>
+              <li>✉ juaniyparraguirre9@gmail.com</li>
+              <li>📱 2473 47 4909</li>
+            </ul>
+            <div>
+              <iframe
+                class="contact-map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13211.486577308575!2d-61.128668999999995!3d-34.124035600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1689018898962!5m2!1ses-419!2sar"
+              ></iframe>
+            </div>
           </div>
+        </div>
+
+        <div class="new-contact">
+          <h3>Deje aquí su consulta:</h3>
+
+          <form action="enviar_correo.php" method="POST">
+            <label for="nombre">✔ Nombre :</label>
+            <input type="text" id="nombre" name="nombre" required />
+            <label for="apellido">✔ Apellido :</label>
+            <input type="text" id="apellido" name="apellido" required />
+            <label for="mensaje">✔ Su consulta 💬</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
+            <input
+              class="new-contact-buttom"
+              type="submit"
+              value="📨 Enviar..."
+            />
+          </form>
         </div>
       </section>
     </main>
+    <footer id="footer">
+      <img class="footer-img" src="./img/LOGO SAPINAGRO.png" alt="logo" />
+    </footer>
   </body>
 </html>
